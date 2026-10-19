@@ -25,7 +25,7 @@ export type DialogState =
   | null;
 
 export interface GameState {
-  connection: 'idle' | 'connecting' | 'online' | 'offline';
+  connection: 'idle' | 'connecting' | 'online' | 'offline' | 'solo';
   me: PlayerSelf | null;
   config: ServerConfigPublic | null;
   serverTimeOffset: number;

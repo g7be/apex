@@ -33,7 +33,7 @@ export function JoinScreen({ onJoin }: { onJoin: () => void }) {
 export function LoadingScreen() {
   const loading = useGame((s) => s.loading);
   const connection = useGame((s) => s.connection);
-  if (loading.ready && connection === 'online') return null;
+  if (loading.ready && (connection === 'online' || connection === 'solo')) return null;
   const pct = loading.tilesTotal ? Math.round((loading.tilesLoaded / loading.tilesTotal) * 100) : 0;
   return (
     <div className="loading">

@@ -263,8 +263,12 @@ ready-made Render blueprint for this (1 GB disk at `/var/data` for the database)
 **Client on Netlify, server elsewhere.** `netlify.toml` builds with `npm run build:web`, which builds
 the client and copies `data/world/*` into `client/dist/world`. Deploy the server (e.g. with
 `render.yaml`), then in Netlify set the environment variable `VITE_GAME_SERVER` to the server's URL
-(e.g. `https://apex-game-server.onrender.com`) and redeploy. Without it the map loads but the client
-reports that it can't reach the game server.
+(e.g. `https://apex-game-server.onrender.com`) and redeploy.
+
+**Solo mode.** Without `VITE_GAME_SERVER`, a client that can't reach a server at its own origin
+switches to single-player: `client/src/net/soloServer.ts` runs the same lease rules in the browser
+and saves the balance and leases in localStorage (per browser, no other players or chat). Add
+`?solo=1` to the URL to force it.
 
 The statewide Indiana tiles are not in git, so hosted builds show the downtown detail and the globe
 only. To include them, build them on the host (`npm run data:state`) or commit/upload `data/world/indiana/`;

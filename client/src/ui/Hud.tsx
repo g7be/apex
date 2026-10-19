@@ -56,7 +56,7 @@ function PlayerCard() {
       </div>
       <div className="player-stats">
         <button className="chip" onClick={() => game.set({ myPropertiesOpen: true })} title="Your leased buildings">🏢 {leases}</button>
-        <span className={`chip conn ${connection}`} title={`Server: ${connection}`}>● {online} online</span>
+        {connection === 'solo' ? <span className="chip conn solo" title="No game server connected: progress is saved in this browser only">● Solo</span> : <span className={`chip conn ${connection}`} title={`Server: ${connection}`}>● {online} online</span>}
       </div>
     </div>
   );

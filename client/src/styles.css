@@ -71,6 +71,7 @@ code { font-family: ui-monospace, Consolas, monospace; background: rgba(255,255,
 .conn.online { color: var(--good); }
 .conn.connecting, .conn.idle { color: var(--warn); }
 .conn.offline { color: var(--bad); }
+.conn.solo { color: var(--accent, #9ab); }
 
 .location-bar { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); text-align: center; pointer-events: none; text-shadow: 0 2px 10px rgba(0,0,0,.7); }
 .loc-main { font-size: 20px; font-weight: 800; letter-spacing: 0.02em; }

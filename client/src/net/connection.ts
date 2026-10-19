@@ -5,10 +5,16 @@ import type { ClientMessage, Lease, ServerMessage } from '@indy/shared';
 import { game } from '../state/store.ts';
 import { local, remotes } from '../state/live.ts';
 import { getBuilding } from '../world/worldData.ts';
+import { SoloServer } from './soloServer.ts';
 
-const profile = new URLSearchParams(location.search).get('profile')?.replace(/[^\w-]/g, '').slice(0, 24) || 'default';
+const params = new URLSearchParams(location.search);
+const profile = params.get('profile')?.replace(/[^\w-]/g, '').slice(0, 24) || 'default';
 const TOKEN_KEY = `indy.token.${profile}`;
 const NAME_KEY = `indy.name.${profile}`;
+const SOLO_KEY = `indy.solo.${profile}`;
+const configuredServer = (import.meta.env.VITE_GAME_SERVER as string | undefined)?.trim();
+/** ?solo=1 forces single-player. Without a configured server we also fall back to it when /ws is unreachable. */
+const forceSolo = params.get('solo') === '1';
 
 function storage(key: string, value?: string | null): string | null {
   try {
@@ -31,8 +37,7 @@ export const identity = {
  * VITE_GAME_SERVER at build time to the server's http(s) URL.
  */
 export function gameServerUrl() {
-  const configured = (import.meta.env.VITE_GAME_SERVER as string | undefined)?.trim();
-  if (configured) return `${configured.replace(/^http/, 'ws').replace(/\/+$/, '')}/ws`;
+  if (configuredServer) return `${configuredServer.replace(/^http/, 'ws').replace(/\/+$/, '')}/ws`;
   const proto = location.protocol === 'https:' ? 'wss' : 'ws';
   return `${proto}://${location.host}/ws`;
 }
@@ -48,6 +53,8 @@ class Connection {
   private lastSent = '';
   private kicked = false;
   private desiredName?: string;
+  private everOpened = false;
+  private solo: SoloServer | null = null;
 
   connect(name?: string) {
     if (name) {
@@ -55,6 +62,8 @@ class Connection {
       storage(NAME_KEY, name);
     }
     this.kicked = false;
+    if (this.solo) return this.solo.start(this.desiredName);
+    if (forceSolo) return this.startSolo();
     if (this.ws) return;
     this.open();
   }
@@ -65,6 +74,7 @@ class Connection {
     this.ws = ws;
     ws.onopen = () => {
       this.retry = 0;
+      this.everOpened = true;
       this.raw({ t: 'hello', token: storage(TOKEN_KEY) ?? undefined, name: this.desiredName ?? identity.savedName() ?? undefined });
     };
     ws.onmessage = (ev) => {
@@ -83,12 +93,20 @@ class Connection {
       for (const [, p] of this.pending) p.resolve({ ok: false, error: 'Connection lost' });
       this.pending.clear();
       if (this.kicked) return;
+      // No server deployed alongside this client (static hosting): play solo instead.
+      if (!this.everOpened && !configuredServer) return this.startSolo();
       const delay = Math.min(10_000, 500 * 2 ** this.retry++);
       setTimeout(() => this.open(), delay);
     };
   }
 
+  private startSolo() {
+    this.solo = new SoloServer(SOLO_KEY, (m) => this.onMessage(m));
+    this.solo.start(this.desiredName ?? identity.savedName());
+  }
+
   private raw(msg: ClientMessage) {
+    if (this.solo) return this.solo.handle(msg);
     if (this.ws?.readyState === WebSocket.OPEN) this.ws.send(JSON.stringify(msg));
   }
 
@@ -109,9 +127,10 @@ class Connection {
           }
         }
         const first = !game.get().me;
-        game.set({ connection: 'online', me: msg.you, config: msg.config, leases, players, serverTimeOffset: msg.serverTime - Date.now() });
+        game.set({ connection: this.solo ? 'solo' : 'online', me: msg.you, config: msg.config, leases, players, serverTimeOffset: msg.serverTime - Date.now() });
         if (first) game.addChat({ from: null, text: `Welcome, ${msg.you.name}! Click any building to inspect it. Press H for controls.`, channel: 'system', ts: Date.now() });
-        this.startSending();
+        if (first && this.solo) game.addChat({ from: null, text: 'Playing solo: no game server is connected, so your balance and leases are saved in this browser only.', channel: 'system', ts: Date.now() });
+        if (!this.solo) this.startSending();
         break;
       }
       case 'players': {
@@ -208,7 +227,7 @@ class Connection {
 
   request(msg: { t: 'rent' | 'renew' | 'release'; buildingId: string } | { t: 'rename'; buildingId: string; name: string }) {
     return new Promise<{ ok: boolean; error?: string; lease?: Lease }>((resolve) => {
-      if (this.ws?.readyState !== WebSocket.OPEN) return resolve({ ok: false, error: 'Not connected to the server.' });
+      if (!this.solo && this.ws?.readyState !== WebSocket.OPEN) return resolve({ ok: false, error: 'Not connected to the server.' });
       const req = this.req++;
       const timer = window.setTimeout(() => {
         this.pending.delete(req);
