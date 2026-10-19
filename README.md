@@ -37,7 +37,7 @@ npm run data:state
 npm run data:build
 ```
 
-`data:state` writes `data/world/indiana/` and also refreshes the raw downtown data, which `data:build` turns into
+`data:state` writes `data/world/indiana/` (checked in) and also refreshes the raw downtown data, which `data:build` turns into
 the full-detail city tiles. Restart `npm run dev` afterward. Without state data the game still works; it just
 stops at downtown. (`npm run data:fetch` is the older Overpass-based downtown download, kept as a fallback.)
 
@@ -270,10 +270,9 @@ switches to single-player: `client/src/net/soloServer.ts` runs the same lease ru
 and saves the balance and leases in localStorage (per browser, no other players or chat). Add
 `?solo=1` to the URL to force it.
 
-The statewide Indiana tiles are not in git, so hosted builds show the downtown detail and the globe
-only. To include them, build them on the host (`npm run data:state`) or commit/upload `data/world/indiana/`;
-they're gzipped `.json.gz` files that must be served with `Content-Encoding: gzip`, which the game
-server does (set `COPY_STATE=1` to copy them into a static build).
+The statewide Indiana tiles (`data/world/indiana/`, ~220 MB of `.json.gz`) are checked in, so hosted
+builds include the whole state. The game server sends them with `Content-Encoding: gzip`; static hosts
+send the raw gzip bytes, which the client unzips itself (`fetchJson` in `client/src/world/stateData.ts`).
 
 ## Known limitations
 

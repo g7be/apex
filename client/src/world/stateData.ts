@@ -84,10 +84,15 @@ function cached<T>(key: string, load: () => Promise<T>): Promise<T> {
   return p;
 }
 
+// The game server sends .json.gz with Content-Encoding: gzip, so the browser
+// unzips it. Static hosts (Netlify) send the raw gzip bytes: unzip those here.
 const fetchJson = async (url: string) => {
   const r = await fetch(url);
   if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
-  return r.json();
+  const bytes = new Uint8Array(await r.arrayBuffer());
+  if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
+  const unzipped = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+  return new Response(unzipped).json();
 };
 
 export const loadDetailTile = (key: string) => cached(`detail/${key}`, () => fetchJson(`${base}/detail/${key}.json.gz`) as Promise<TileData>);

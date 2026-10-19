@@ -6,4 +6,3 @@ server/data/*.db*
 data/raw/
 *.log
 .env
-data/world/indiana/
