@@ -1,0 +1,9 @@
+node_modules/
+dist/
+server/data/*.db*
+# Raw Overpass downloads are reproducible with `npm run data:fetch`; the processed
+# tiles in data/world/ are the checked-in sample dataset.
+data/raw/
+*.log
+.env
+data/world/indiana/

@@ -1,0 +1,37 @@
+{
+  "indianapolis-downtown": {
+    "name": "Downtown Indianapolis, Indiana",
+    "origin": {
+      "lat": 39.7684,
+      "lon": -86.1581
+    },
+    "bbox": [
+      39.757,
+      -86.172,
+      39.78,
+      -86.142
+    ],
+    "placesBbox": [
+      39.745,
+      -86.185,
+      39.792,
+      -86.128
+    ],
+    "fetchGrid": 6,
+    "tileZoom": 16
+  },
+  "indiana": {
+    "name": "Indiana",
+    "origin": {
+      "lat": 39.7684,
+      "lon": -86.1581
+    },
+    "pbf": "data/raw/indiana-latest.osm.pbf",
+    "detailRegion": "indianapolis-downtown",
+    "layers": {
+      "overview": 9,
+      "mid": 12,
+      "detail": 14
+    }
+  }
+}

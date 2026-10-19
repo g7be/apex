@@ -1,0 +1,36 @@
+{
+  "name": "indy-property-sim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Real-world multiplayer property simulation game — Downtown Indianapolis MVP",
+  "workspaces": [
+    "shared",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run data:build",
+    "dev": "concurrently -k -n server,client -c cyan,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
+    "data:fetch": "node scripts/fetch-osm.mjs indianapolis-downtown",
+    "data:build": "tsx scripts/build-world.ts indianapolis-downtown",
+    "data:globe": "tsx scripts/build-globe.ts",
+    "data:state": "node --max-old-space-size=8192 --import tsx scripts/import-state.ts indiana",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p shared && tsc -p server && tsc -p client && tsc -p .",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "concurrently": "^10.0.6",
+    "osm-pbf-parser-node": "^1.1.4",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

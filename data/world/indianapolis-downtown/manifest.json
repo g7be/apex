@@ -1,0 +1,2139 @@
+{
+ "region": "indianapolis-downtown",
+ "name": "Downtown Indianapolis, Indiana",
+ "origin": {
+  "lat": 39.7684,
+  "lon": -86.1581
+ },
+ "tileZoom": 16,
+ "bounds": [
+  -1189.34,
+  -1269.04,
+  1377.58,
+  1291.31
+ ],
+ "attribution": "© OpenStreetMap contributors. Data available under the Open Database License (ODbL) 1.0, https://www.openstreetmap.org/copyright",
+ "source": {
+  "fetchedAt": "2026-10-19T07:29:08.653Z",
+  "dataset": "OpenStreetMap via Overpass API"
+ },
+ "generatorVersion": 1,
+ "tiles": [
+  {
+   "key": "16-17080-24862",
+   "z": 16,
+   "x": 17080,
+   "y": 24862,
+   "bounds": [
+    -1596.44,
+    1179.01,
+    -1126.42,
+    1648.94
+   ],
+   "buildings": 1,
+   "file": "tiles/16-17080-24862.json"
+  },
+  {
+   "key": "16-17080-24863",
+   "z": 16,
+   "x": 17080,
+   "y": 24863,
+   "bounds": [
+    -1596.44,
+    709.05,
+    -1126.42,
+    1179.01
+   ],
+   "buildings": 7,
+   "file": "tiles/16-17080-24863.json"
+  },
+  {
+   "key": "16-17080-24864",
+   "z": 16,
+   "x": 17080,
+   "y": 24864,
+   "bounds": [
+    -1596.44,
+    239.06,
+    -1126.42,
+    709.05
+   ],
+   "buildings": 1,
+   "file": "tiles/16-17080-24864.json"
+  },
+  {
+   "key": "16-17080-24865",
+   "z": 16,
+   "x": 17080,
+   "y": 24865,
+   "bounds": [
+    -1596.44,
+    -230.96,
+    -1126.42,
+    239.06
+   ],
+   "buildings": 1,
+   "file": "tiles/16-17080-24865.json"
+  },
+  {
+   "key": "16-17080-24866",
+   "z": 16,
+   "x": 17080,
+   "y": 24866,
+   "bounds": [
+    -1596.44,
+    -701.01,
+    -1126.42,
+    -230.96
+   ],
+   "buildings": 1,
+   "file": "tiles/16-17080-24866.json"
+  },
+  {
+   "key": "16-17080-24867",
+   "z": 16,
+   "x": 17080,
+   "y": 24867,
+   "bounds": [
+    -1596.44,
+    -1171.08,
+    -1126.42,
+    -701.01
+   ],
+   "buildings": 4,
+   "file": "tiles/16-17080-24867.json"
+  },
+  {
+   "key": "16-17080-24868",
+   "z": 16,
+   "x": 17080,
+   "y": 24868,
+   "bounds": [
+    -1596.44,
+    -1641.19,
+    -1126.42,
+    -1171.08
+   ],
+   "buildings": 0,
+   "file": "tiles/16-17080-24868.json"
+  },
+  {
+   "key": "16-17081-24862",
+   "z": 16,
+   "x": 17081,
+   "y": 24862,
+   "bounds": [
+    -1126.42,
+    1179.01,
+    -656.4,
+    1648.94
+   ],
+   "buildings": 90,
+   "file": "tiles/16-17081-24862.json"
+  },
+  {
+   "key": "16-17081-24863",
+   "z": 16,
+   "x": 17081,
+   "y": 24863,
+   "bounds": [
+    -1126.42,
+    709.05,
+    -656.4,
+    1179.01
+   ],
+   "buildings": 88,
+   "file": "tiles/16-17081-24863.json"
+  },
+  {
+   "key": "16-17081-24864",
+   "z": 16,
+   "x": 17081,
+   "y": 24864,
+   "bounds": [
+    -1126.42,
+    239.06,
+    -656.4,
+    709.05
+   ],
+   "buildings": 11,
+   "file": "tiles/16-17081-24864.json"
+  },
+  {
+   "key": "16-17081-24865",
+   "z": 16,
+   "x": 17081,
+   "y": 24865,
+   "bounds": [
+    -1126.42,
+    -230.96,
+    -656.4,
+    239.06
+   ],
+   "buildings": 12,
+   "file": "tiles/16-17081-24865.json"
+  },
+  {
+   "key": "16-17081-24866",
+   "z": 16,
+   "x": 17081,
+   "y": 24866,
+   "bounds": [
+    -1126.42,
+    -701.01,
+    -656.4,
+    -230.96
+   ],
+   "buildings": 5,
+   "file": "tiles/16-17081-24866.json"
+  },
+  {
+   "key": "16-17081-24867",
+   "z": 16,
+   "x": 17081,
+   "y": 24867,
+   "bounds": [
+    -1126.42,
+    -1171.08,
+    -656.4,
+    -701.01
+   ],
+   "buildings": 26,
+   "file": "tiles/16-17081-24867.json"
+  },
+  {
+   "key": "16-17081-24868",
+   "z": 16,
+   "x": 17081,
+   "y": 24868,
+   "bounds": [
+    -1126.42,
+    -1641.19,
+    -656.4,
+    -1171.08
+   ],
+   "buildings": 5,
+   "file": "tiles/16-17081-24868.json"
+  },
+  {
+   "key": "16-17082-24862",
+   "z": 16,
+   "x": 17082,
+   "y": 24862,
+   "bounds": [
+    -656.4,
+    1179.01,
+    -186.39,
+    1648.94
+   ],
+   "buildings": 15,
+   "file": "tiles/16-17082-24862.json"
+  },
+  {
+   "key": "16-17082-24863",
+   "z": 16,
+   "x": 17082,
+   "y": 24863,
+   "bounds": [
+    -656.4,
+    709.05,
+    -186.39,
+    1179.01
+   ],
+   "buildings": 75,
+   "file": "tiles/16-17082-24863.json"
+  },
+  {
+   "key": "16-17082-24864",
+   "z": 16,
+   "x": 17082,
+   "y": 24864,
+   "bounds": [
+    -656.4,
+    239.06,
+    -186.39,
+    709.05
+   ],
+   "buildings": 19,
+   "file": "tiles/16-17082-24864.json"
+  },
+  {
+   "key": "16-17082-24865",
+   "z": 16,
+   "x": 17082,
+   "y": 24865,
+   "bounds": [
+    -656.4,
+    -230.96,
+    -186.39,
+    239.06
+   ],
+   "buildings": 26,
+   "file": "tiles/16-17082-24865.json"
+  },
+  {
+   "key": "16-17082-24866",
+   "z": 16,
+   "x": 17082,
+   "y": 24866,
+   "bounds": [
+    -656.4,
+    -701.01,
+    -186.39,
+    -230.96
+   ],
+   "buildings": 13,
+   "file": "tiles/16-17082-24866.json"
+  },
+  {
+   "key": "16-17082-24867",
+   "z": 16,
+   "x": 17082,
+   "y": 24867,
+   "bounds": [
+    -656.4,
+    -1171.08,
+    -186.39,
+    -701.01
+   ],
+   "buildings": 4,
+   "file": "tiles/16-17082-24867.json"
+  },
+  {
+   "key": "16-17082-24868",
+   "z": 16,
+   "x": 17082,
+   "y": 24868,
+   "bounds": [
+    -656.4,
+    -1641.19,
+    -186.39,
+    -1171.08
+   ],
+   "buildings": 1,
+   "file": "tiles/16-17082-24868.json"
+  },
+  {
+   "key": "16-17083-24862",
+   "z": 16,
+   "x": 17083,
+   "y": 24862,
+   "bounds": [
+    -186.39,
+    1179.01,
+    283.63,
+    1648.94
+   ],
+   "buildings": 18,
+   "file": "tiles/16-17083-24862.json"
+  },
+  {
+   "key": "16-17083-24863",
+   "z": 16,
+   "x": 17083,
+   "y": 24863,
+   "bounds": [
+    -186.39,
+    709.05,
+    283.63,
+    1179.01
+   ],
+   "buildings": 40,
+   "file": "tiles/16-17083-24863.json"
+  },
+  {
+   "key": "16-17083-24864",
+   "z": 16,
+   "x": 17083,
+   "y": 24864,
+   "bounds": [
+    -186.39,
+    239.06,
+    283.63,
+    709.05
+   ],
+   "buildings": 31,
+   "file": "tiles/16-17083-24864.json"
+  },
+  {
+   "key": "16-17083-24865",
+   "z": 16,
+   "x": 17083,
+   "y": 24865,
+   "bounds": [
+    -186.39,
+    -230.96,
+    283.63,
+    239.06
+   ],
+   "buildings": 72,
+   "file": "tiles/16-17083-24865.json"
+  },
+  {
+   "key": "16-17083-24866",
+   "z": 16,
+   "x": 17083,
+   "y": 24866,
+   "bounds": [
+    -186.39,
+    -701.01,
+    283.63,
+    -230.96
+   ],
+   "buildings": 41,
+   "file": "tiles/16-17083-24866.json"
+  },
+  {
+   "key": "16-17083-24867",
+   "z": 16,
+   "x": 17083,
+   "y": 24867,
+   "bounds": [
+    -186.39,
+    -1171.08,
+    283.63,
+    -701.01
+   ],
+   "buildings": 30,
+   "file": "tiles/16-17083-24867.json"
+  },
+  {
+   "key": "16-17083-24868",
+   "z": 16,
+   "x": 17083,
+   "y": 24868,
+   "bounds": [
+    -186.39,
+    -1641.19,
+    283.63,
+    -1171.08
+   ],
+   "buildings": 12,
+   "file": "tiles/16-17083-24868.json"
+  },
+  {
+   "key": "16-17084-24862",
+   "z": 16,
+   "x": 17084,
+   "y": 24862,
+   "bounds": [
+    283.63,
+    1179.01,
+    753.65,
+    1648.94
+   ],
+   "buildings": 32,
+   "file": "tiles/16-17084-24862.json"
+  },
+  {
+   "key": "16-17084-24863",
+   "z": 16,
+   "x": 17084,
+   "y": 24863,
+   "bounds": [
+    283.63,
+    709.05,
+    753.65,
+    1179.01
+   ],
+   "buildings": 63,
+   "file": "tiles/16-17084-24863.json"
+  },
+  {
+   "key": "16-17084-24864",
+   "z": 16,
+   "x": 17084,
+   "y": 24864,
+   "bounds": [
+    283.63,
+    239.06,
+    753.65,
+    709.05
+   ],
+   "buildings": 70,
+   "file": "tiles/16-17084-24864.json"
+  },
+  {
+   "key": "16-17084-24865",
+   "z": 16,
+   "x": 17084,
+   "y": 24865,
+   "bounds": [
+    283.63,
+    -230.96,
+    753.65,
+    239.06
+   ],
+   "buildings": 57,
+   "file": "tiles/16-17084-24865.json"
+  },
+  {
+   "key": "16-17084-24866",
+   "z": 16,
+   "x": 17084,
+   "y": 24866,
+   "bounds": [
+    283.63,
+    -701.01,
+    753.65,
+    -230.96
+   ],
+   "buildings": 21,
+   "file": "tiles/16-17084-24866.json"
+  },
+  {
+   "key": "16-17084-24867",
+   "z": 16,
+   "x": 17084,
+   "y": 24867,
+   "bounds": [
+    283.63,
+    -1171.08,
+    753.65,
+    -701.01
+   ],
+   "buildings": 11,
+   "file": "tiles/16-17084-24867.json"
+  },
+  {
+   "key": "16-17084-24868",
+   "z": 16,
+   "x": 17084,
+   "y": 24868,
+   "bounds": [
+    283.63,
+    -1641.19,
+    753.65,
+    -1171.08
+   ],
+   "buildings": 1,
+   "file": "tiles/16-17084-24868.json"
+  },
+  {
+   "key": "16-17085-24862",
+   "z": 16,
+   "x": 17085,
+   "y": 24862,
+   "bounds": [
+    753.65,
+    1179.01,
+    1223.67,
+    1648.94
+   ],
+   "buildings": 65,
+   "file": "tiles/16-17085-24862.json"
+  },
+  {
+   "key": "16-17085-24863",
+   "z": 16,
+   "x": 17085,
+   "y": 24863,
+   "bounds": [
+    753.65,
+    709.05,
+    1223.67,
+    1179.01
+   ],
+   "buildings": 161,
+   "file": "tiles/16-17085-24863.json"
+  },
+  {
+   "key": "16-17085-24864",
+   "z": 16,
+   "x": 17085,
+   "y": 24864,
+   "bounds": [
+    753.65,
+    239.06,
+    1223.67,
+    709.05
+   ],
+   "buildings": 242,
+   "file": "tiles/16-17085-24864.json"
+  },
+  {
+   "key": "16-17085-24865",
+   "z": 16,
+   "x": 17085,
+   "y": 24865,
+   "bounds": [
+    753.65,
+    -230.96,
+    1223.67,
+    239.06
+   ],
+   "buildings": 52,
+   "file": "tiles/16-17085-24865.json"
+  },
+  {
+   "key": "16-17085-24866",
+   "z": 16,
+   "x": 17085,
+   "y": 24866,
+   "bounds": [
+    753.65,
+    -701.01,
+    1223.67,
+    -230.96
+   ],
+   "buildings": 41,
+   "file": "tiles/16-17085-24866.json"
+  },
+  {
+   "key": "16-17085-24867",
+   "z": 16,
+   "x": 17085,
+   "y": 24867,
+   "bounds": [
+    753.65,
+    -1171.08,
+    1223.67,
+    -701.01
+   ],
+   "buildings": 282,
+   "file": "tiles/16-17085-24867.json"
+  },
+  {
+   "key": "16-17085-24868",
+   "z": 16,
+   "x": 17085,
+   "y": 24868,
+   "bounds": [
+    753.65,
+    -1641.19,
+    1223.67,
+    -1171.08
+   ],
+   "buildings": 52,
+   "file": "tiles/16-17085-24868.json"
+  },
+  {
+   "key": "16-17086-24862",
+   "z": 16,
+   "x": 17086,
+   "y": 24862,
+   "bounds": [
+    1223.67,
+    1179.01,
+    1693.69,
+    1648.94
+   ],
+   "buildings": 3,
+   "file": "tiles/16-17086-24862.json"
+  },
+  {
+   "key": "16-17086-24863",
+   "z": 16,
+   "x": 17086,
+   "y": 24863,
+   "bounds": [
+    1223.67,
+    709.05,
+    1693.69,
+    1179.01
+   ],
+   "buildings": 12,
+   "file": "tiles/16-17086-24863.json"
+  },
+  {
+   "key": "16-17086-24864",
+   "z": 16,
+   "x": 17086,
+   "y": 24864,
+   "bounds": [
+    1223.67,
+    239.06,
+    1693.69,
+    709.05
+   ],
+   "buildings": 6,
+   "file": "tiles/16-17086-24864.json"
+  },
+  {
+   "key": "16-17086-24865",
+   "z": 16,
+   "x": 17086,
+   "y": 24865,
+   "bounds": [
+    1223.67,
+    -230.96,
+    1693.69,
+    239.06
+   ],
+   "buildings": 6,
+   "file": "tiles/16-17086-24865.json"
+  },
+  {
+   "key": "16-17086-24866",
+   "z": 16,
+   "x": 17086,
+   "y": 24866,
+   "bounds": [
+    1223.67,
+    -701.01,
+    1693.69,
+    -230.96
+   ],
+   "buildings": 3,
+   "file": "tiles/16-17086-24866.json"
+  },
+  {
+   "key": "16-17086-24867",
+   "z": 16,
+   "x": 17086,
+   "y": 24867,
+   "bounds": [
+    1223.67,
+    -1171.08,
+    1693.69,
+    -701.01
+   ],
+   "buildings": 20,
+   "file": "tiles/16-17086-24867.json"
+  },
+  {
+   "key": "16-17086-24868",
+   "z": 16,
+   "x": 17086,
+   "y": 24868,
+   "bounds": [
+    1223.67,
+    -1641.19,
+    1693.69,
+    -1171.08
+   ],
+   "buildings": 17,
+   "file": "tiles/16-17086-24868.json"
+  }
+ ],
+ "neighborhoods": [
+  {
+   "name": "Arsenal Heights",
+   "pos": [
+    2155.38,
+    90.57
+   ]
+  },
+  {
+   "name": "Chatham-Arch",
+   "pos": [
+    954.48,
+    1161.81
+   ]
+  },
+  {
+   "name": "Cottage Home",
+   "pos": [
+    1748.44,
+    1029.69
+   ]
+  },
+  {
+   "name": "Fayette Street Conservation Area",
+   "pos": [
+    -751.66,
+    1315.63
+   ]
+  },
+  {
+   "name": "Fletcher Place",
+   "pos": [
+    909.76,
+    -1028.2
+   ]
+  },
+  {
+   "name": "Fountain Square",
+   "pos": [
+    1880.31,
+    -1609.3
+   ]
+  },
+  {
+   "name": "Historic Ransom Place",
+   "pos": [
+    -991.45,
+    1255.91
+   ]
+  },
+  {
+   "name": "Holy Cross",
+   "pos": [
+    1686.17,
+    170.29
+   ]
+  },
+  {
+   "name": "Irish Hill",
+   "pos": [
+    1848.44,
+    -392.81
+   ]
+  },
+  {
+   "name": "Old Northside Historic District",
+   "pos": [
+    745.85,
+    1943.36
+   ]
+  },
+  {
+   "name": "Old Southside",
+   "pos": [
+    -481.14,
+    -1886.08
+   ]
+  },
+  {
+   "name": "St. Joseph",
+   "pos": [
+    339.2,
+    1334.26
+   ]
+  },
+  {
+   "name": "Watermark",
+   "pos": [
+    -514.16,
+    876.41
+   ]
+  },
+  {
+   "name": "Windsor Park",
+   "pos": [
+    2369.19,
+    1652.48
+   ]
+  },
+  {
+   "name": "Woodruff Place",
+   "pos": [
+    2548.17,
+    1017.77
+   ]
+  },
+  {
+   "name": "Young's Sub",
+   "pos": [
+    1038.31,
+    1245.6
+   ]
+  }
+ ],
+ "landmarks": [
+  {
+   "name": "110 Building",
+   "pos": [
+    197.36,
+    -109.17
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "30 South Meridian",
+   "pos": [
+    -35.84,
+    -251.27
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "300 North Meridian",
+   "pos": [
+    -29.06,
+    355.27
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "360 Market Square",
+   "pos": [
+    579.83,
+    25.16
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "800 CAP",
+   "pos": [
+    -315.88,
+    1118.31
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Abraham Lincoln",
+   "pos": [
+    -602.53,
+    -108.26
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Abraham Lincoln or Seated Lincoln",
+   "pos": [
+    144.89,
+    346.17
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Alloy",
+   "pos": [
+    413.93,
+    -97.76
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Aloft",
+   "pos": [
+    249.21,
+    33.35
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "American Legion National Headquarters",
+   "pos": [
+    158.42,
+    957.52
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Ann Dancing",
+   "pos": [
+    508.59,
+    475.26
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Antelope Club",
+   "pos": [
+    368.42,
+    848.18
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "AT&T Building",
+   "pos": [
+    -31.18,
+    281.56
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Atlas Hotel",
+   "pos": [
+    707.42,
+    -200.66
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Barnes and Thornburg Building",
+   "pos": [
+    31.47,
+    -196.63
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Birch Bayh Federal Building and U.S. Courthouse",
+   "pos": [
+    90.24,
+    259.37
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "BMO Plaza",
+   "pos": [
+    208.5,
+    116.88
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Brick Head 3",
+   "pos": [
+    502.23,
+    511.3
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Canal Overlook Apartments",
+   "pos": [
+    -550.92,
+    542.49
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Capital Center",
+   "pos": [
+    -103.96,
+    254.43
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Care/Don’t Care",
+   "pos": [
+    1139.23,
+    1048.81
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Central Christian Church",
+   "pos": [
+    398.62,
+    950.37
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Central Library - Indianapolis Marion-County Public Library",
+   "pos": [
+    116.35,
+    1129.52
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Charles Kuhn House",
+   "pos": [
+    -572.09,
+    689.72
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Christ Church Cathedral",
+   "pos": [
+    43.1,
+    103.6
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Christopher Columbus",
+   "pos": [
+    -436.11,
+    -42.01
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Circle Center Mall",
+   "pos": [
+    -90.51,
+    -318.85
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Circle Garden",
+   "pos": [
+    -955.5,
+    -21.58
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Circle Tower",
+   "pos": [
+    88.76,
+    -23.48
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "City Market",
+   "pos": [
+    411.32,
+    49.64
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "City-County Building",
+   "pos": [
+    389.19,
+    -46.9
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Coal Miner",
+   "pos": [
+    -432.72,
+    64.64
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Cole Factory",
+   "pos": [
+    1173.2,
+    -89.71
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Congressional Medal of Honor Memorial",
+   "pos": [
+    -921.31,
+    112.54
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Conrad Indianapolis",
+   "pos": [
+    -115.7,
+    -97.75
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Courtyard Indianapolis at the Capitol",
+   "pos": [
+    -480.58,
+    394.72
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Delaware Flats",
+   "pos": [
+    293.22,
+    62.63
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Depew Memorial Fountain",
+   "pos": [
+    94.98,
+    399.7
+   ],
+   "kind": "attraction"
+  },
+  {
+   "name": "Easley Winery",
+   "pos": [
+    1106.38,
+    159.07
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "East Gate/West Gate",
+   "pos": [
+    -1158.78,
+    612.97
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Eiteljorg Museum",
+   "pos": [
+    -826.61,
+    12.88
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Embassy Suites by Hilton Indianapolis - Downtown",
+   "pos": [
+    -199.55,
+    -94.41
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Fidelity Trust Building",
+   "pos": [
+    266.88,
+    35.52
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Gainbridge Fieldhouse",
+   "pos": [
+    223.22,
+    -482.09
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "George Rogers Clark",
+   "pos": [
+    -23.56,
+    44.88
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "George Washington",
+   "pos": [
+    -392.77,
+    -89.03
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Gibson Company Building",
+   "pos": [
+    -244.47,
+    609.5
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Hampton Inn Indianapolis Downtown Across from Circle Centre",
+   "pos": [
+    38.79,
+    -332.56
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Heier's Hotel",
+   "pos": [
+    596.16,
+    -230.47
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Hilbert Circle Theater",
+   "pos": [
+    81.73,
+    -62.9
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Hilton Garden Inn Indianapolis Downtown",
+   "pos": [
+    128.75,
+    37.84
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Hilton Indianapolis Hotel & Suites",
+   "pos": [
+    -220.33,
+    62.41
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Holiday Inn Express & Suites",
+   "pos": [
+    -663.4,
+    -794.01
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Holiday Inn Indianapolis Downtown",
+   "pos": [
+    -761.1,
+    -918.29
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Holy Rosary Church",
+   "pos": [
+    794.88,
+    -1137.25
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Homeless Jesus",
+   "pos": [
+    472.31,
+    490.36
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Homewood Suites by Hilton Indianapolis-Downtown",
+   "pos": [
+    31.17,
+    -505.21
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Hotel Indy, Indianapolis, A Tribute Portfolio Hotel",
+   "pos": [
+    278.36,
+    -196.3
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Hyatt House Indianapolis / Downtown",
+   "pos": [
+    116.62,
+    -421.82
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Hyatt Regency Indianapolis",
+   "pos": [
+    -239.2,
+    -228.16
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana Convention Center",
+   "pos": [
+    -510.31,
+    -450.63
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana Freemasons' Hall",
+   "pos": [
+    -91.45,
+    760.28
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana Government Center North",
+   "pos": [
+    -587.74,
+    79.87
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana Historical Society",
+   "pos": [
+    -677.26,
+    234.57
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana Repertory Theater",
+   "pos": [
+    -251.61,
+    -90.74
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana State Archives",
+   "pos": [
+    -580.67,
+    264.23
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana State Capitol Building",
+   "pos": [
+    -388.22,
+    25.79
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana State Museum",
+   "pos": [
+    -969.16,
+    42.96
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana State Museum",
+   "pos": [
+    -1091.12,
+    69.82
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indiana World War Memorial",
+   "pos": [
+    98.94,
+    553.89
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indianapolis Athletic Club",
+   "pos": [
+    -47.45,
+    455.29
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indianapolis Fire Fighters Museum",
+   "pos": [
+    1029.2,
+    992.07
+   ],
+   "kind": "museum"
+  },
+  {
+   "name": "Indianapolis Flag Photo Spot",
+   "pos": [
+    1072.44,
+    -1186.05
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Indianapolis Union Station",
+   "pos": [
+    -169.56,
+    -657.79
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Indianapolis War Memorial",
+   "pos": [
+    99.03,
+    539.38
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "James Whitcomb",
+   "pos": [
+    -25.34,
+    -15.41
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "James Whitcomb Riley Home",
+   "pos": [
+    878.16,
+    425.43
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "John J. Barton Apartments",
+   "pos": [
+    761.02,
+    667.95
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Kurt Vonnegut Museum and Library",
+   "pos": [
+    -696.59,
+    792.55
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "L. S. Ayres Annex Warehouse",
+   "pos": [
+    -67.05,
+    -284.05
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "La Quinta Inn & Suites",
+   "pos": [
+    649.74,
+    -213.92
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Lombard Building",
+   "pos": [
+    78.8,
+    -112.63
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Lux Aeterna",
+   "pos": [
+    -456.53,
+    75.88
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Madam C. J. Walker Building",
+   "pos": [
+    -780.36,
+    863.37
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Majestic Building",
+   "pos": [
+    179.9,
+    -285.44
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Market Square Center",
+   "pos": [
+    349.14,
+    114.54
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Market Tower",
+   "pos": [
+    -116.42,
+    53.64
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Marott's Shoes Building",
+   "pos": [
+    63.97,
+    -112.73
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Marriott Indianapolis Downtown",
+   "pos": [
+    -571.28,
+    -203.62
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Marriott IndyPlace",
+   "pos": [
+    -870.14,
+    -219.67
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Marriott IndyPlace",
+   "pos": [
+    -929.65,
+    -169.77
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "McKinney School of Law",
+   "pos": [
+    -840.07,
+    411.63
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Metro Nightclub & Restaurant",
+   "pos": [
+    986.87,
+    898.28
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Minton-Capehart Federal Building",
+   "pos": [
+    230.1,
+    706.89
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Monument Circle Building",
+   "pos": [
+    -59.69,
+    81.74
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Morrison Opera Place",
+   "pos": [
+    39.36,
+    -284.52
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "NCAA Hall of Champions",
+   "pos": [
+    -1128.93,
+    -8.64
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Nestle Inn",
+   "pos": [
+    835.56,
+    891.6
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Oakwood at Canal Square",
+   "pos": [
+    -679.93,
+    425.18
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Old National Centre",
+   "pos": [
+    603.22,
+    678.12
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Oliver P. Morton",
+   "pos": [
+    32.93,
+    -17.3
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Omni Severin Hotel",
+   "pos": [
+    -125.14,
+    -500.73
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "One America Building",
+   "pos": [
+    -217.83,
+    249.81
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "One North Penn",
+   "pos": [
+    180.48,
+    -114.02
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Pan",
+   "pos": [
+    66.74,
+    401.08
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Pan American Plaza (Tower)",
+   "pos": [
+    -284.73,
+    -489.69
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Penn Street Tower",
+   "pos": [
+    188.05,
+    65.22
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Peyton Manning",
+   "pos": [
+    -352.29,
+    -784.4
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Prime Commonality",
+   "pos": [
+    -1045.95,
+    -158.6
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Reclamation",
+   "pos": [
+    618.03,
+    600.57
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Regions Tower",
+   "pos": [
+    246.76,
+    211.36
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Residence Inn Indianapolis Downtown on the Canal",
+   "pos": [
+    -582.62,
+    420.22
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Rhino Arch",
+   "pos": [
+    -883.78,
+    -19.95
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Riley Towers",
+   "pos": [
+    469.04,
+    878.45
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Riley Towers I",
+   "pos": [
+    448.54,
+    747.93
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Robert Dale Owen Memorial",
+   "pos": [
+    -392.71,
+    -66.9
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Roberts Park United Methodist Church",
+   "pos": [
+    379.24,
+    511.56
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Saint John the Evangelist Roman Catholic Church",
+   "pos": [
+    -275.65,
+    -392.53
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Salesforce Tower",
+   "pos": [
+    86.27,
+    133.7
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Scottish Rite Cathedral",
+   "pos": [
+    -14.83,
+    865.5
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Selig's Dry Goods Company Building",
+   "pos": [
+    -66.48,
+    -108.37
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Sheraton Indianapolis City Centre Hotel",
+   "pos": [
+    -48.3,
+    137.85
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Sidney & Lois Eskenazi Hall",
+   "pos": [
+    -1133.81,
+    295.52
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Simon Tower",
+   "pos": [
+    -358.74,
+    -176.57
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Slippery Noodle Inn",
+   "pos": [
+    -55.34,
+    -752.6
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Soldiers and Sailors Monument",
+   "pos": [
+    4.8,
+    13.57
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Staybridge Suites",
+   "pos": [
+    -767.5,
+    -993.35
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Syrinx",
+   "pos": [
+    113.89,
+    400.08
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "The Alexander, Autograph Collection",
+   "pos": [
+    359.53,
+    -731.72
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Alexandra",
+   "pos": [
+    609.25,
+    501.26
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Artsgarden",
+   "pos": [
+    -155.19,
+    -143.42
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Athenaeum",
+   "pos": [
+    682.66,
+    575.72
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Baker",
+   "pos": [
+    445.8,
+    359.55
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Blacherne",
+   "pos": [
+    -26.52,
+    503.01
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Colonial",
+   "pos": [
+    299.5,
+    497.32
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Columbia Club",
+   "pos": [
+    70.13,
+    91.89
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Dartmouth",
+   "pos": [
+    396.63,
+    591
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Devonshire",
+   "pos": [
+    453.65,
+    534.39
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Hall",
+   "pos": [
+    440.45,
+    200.11
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Martens",
+   "pos": [
+    -416.96,
+    423.59
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Massachusetts",
+   "pos": [
+    573.26,
+    517.58
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Mayleeno",
+   "pos": [
+    692.9,
+    481.37
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Obelisk",
+   "pos": [
+    103.91,
+    712.12
+   ],
+   "kind": "monument"
+  },
+  {
+   "name": "The Oxford",
+   "pos": [
+    543.59,
+    491.12
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Rink",
+   "pos": [
+    -111.28,
+    506.93
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Savoy",
+   "pos": [
+    -88.67,
+    508.07
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Sid-Mar",
+   "pos": [
+    529.75,
+    483.02
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Tent",
+   "pos": [
+    -1046.2,
+    -99.06
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "The Vienna",
+   "pos": [
+    504.32,
+    329.7
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Westin Indianapolis",
+   "pos": [
+    -483,
+    -229.58
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "The Westward Journey",
+   "pos": [
+    -391.69,
+    -44.74
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "The Wil-Fra-Mar",
+   "pos": [
+    540.76,
+    332.43
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Thomas A. Hendricks Monument",
+   "pos": [
+    -349.88,
+    -92.24
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Time Flow",
+   "pos": [
+    -457.41,
+    -15.51
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Totem",
+   "pos": [
+    -1152.87,
+    -84.26
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "TownePlace Suites",
+   "pos": [
+    -112.61,
+    -1174.61
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "Tru",
+   "pos": [
+    -123.68,
+    -1067.87
+   ],
+   "kind": "building"
+  },
+  {
+   "name": "USS Indianapolis National Memorial",
+   "pos": [
+    -565.58,
+    965.43
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Victory",
+   "pos": [
+    5.1,
+    13.59
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "William Henry Harrison",
+   "pos": [
+    34.86,
+    42.8
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Workers' Memorial",
+   "pos": [
+    -744.47,
+    90.48
+   ],
+   "kind": "memorial"
+  },
+  {
+   "name": "Yellow Butterfly",
+   "pos": [
+    -1042.24,
+    -15.37
+   ],
+   "kind": "artwork"
+  },
+  {
+   "name": "Young Abe Lincoln",
+   "pos": [
+    -607.27,
+    15.71
+   ],
+   "kind": "artwork"
+  }
+ ],
+ "spawn": [
+  0,
+  -40
+ ],
+ "stats": {
+  "buildings": 1866,
+  "roads": 5141,
+  "areas": 613,
+  "trees": 2600
+ }
+}

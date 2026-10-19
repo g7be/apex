@@ -1,0 +1,27 @@
+import type { RoomKind } from '@indy/shared';
+
+export const ROOM_COLORS: Record<RoomKind, string> = {
+  lobby: '#f2b84b',
+  reception: '#f0a35e',
+  corridor: '#d9dde3',
+  office: '#7fb3e6',
+  meeting: '#9b8cf0',
+  restroom: '#5fc7c2',
+  storage: '#b9a58c',
+  utility: '#a7a29a',
+  stair: '#e57373',
+  elevator: '#ef8f6b',
+  retail: '#f48fb1',
+  kitchen: '#ffcc80',
+  bedroom: '#a5d6a7',
+  living: '#c5e1a5',
+  bathroom: '#80deea',
+  hotel_room: '#ce93d8',
+  parking: '#90a4ae',
+  hall: '#ffab91',
+  service: '#bcaaa4',
+  break_room: '#ffe082',
+  classroom: '#81c784',
+  dining: '#ffb74d',
+  mechanical: '#9e9e9e',
+};
