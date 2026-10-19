@@ -6,3 +6,6 @@ server/data/*.db*
 data/raw/
 *.log
 .env
+
+# Saved conversation transcript (local only)
+conversation/
