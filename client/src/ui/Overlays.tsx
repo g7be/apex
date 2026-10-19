@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { game, useGame } from '../state/store.ts';
-import { identity, net } from '../net/connection.ts';
+import { gameServerUrl, identity, net } from '../net/connection.ts';
 
 export function JoinScreen({ onJoin }: { onJoin: () => void }) {
   const manifest = useGame((s) => s.manifest);
@@ -40,7 +40,7 @@ export function LoadingScreen() {
       <div className="loading-card">
         <div className="spinner" />
         <div>
-          {loading.error ? loading.error : !loading.ready ? `Loading downtown Indianapolis… ${pct}%` : connection === 'offline' ? 'Reconnecting to the game server…' : 'Connecting to the game server…'}
+          {loading.error ? loading.error : !loading.ready ? `Loading downtown Indianapolis… ${pct}%` : connection === 'offline' ? `Can't reach the game server at ${gameServerUrl()} — retrying…` : 'Connecting to the game server…'}
         </div>
       </div>
     </div>

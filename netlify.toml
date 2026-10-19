@@ -1,0 +1,17 @@
+# Netlify hosts the static client: the 3D map, the downtown city tiles and the
+# globe data. The multiplayer game server (WebSockets + SQLite) cannot run on
+# Netlify; host it separately (see render.yaml / README "Deploying") and set
+# VITE_GAME_SERVER in Netlify's environment variables to its URL, e.g.
+#   VITE_GAME_SERVER = https://apex-game-server.onrender.com
+[build]
+  command = "npm run build:web"
+  publish = "client/dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# World data can change between deploys; always revalidate it.
+[[headers]]
+  for = "/world/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

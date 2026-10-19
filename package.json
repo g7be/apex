@@ -20,6 +20,7 @@
     "test:watch": "vitest",
     "typecheck": "tsc -p shared && tsc -p server && tsc -p client && tsc -p .",
     "build": "npm run build -w client",
+    "build:web": "npm run build -w client && node scripts/copy-world.mjs",
     "start": "npm run start -w server"
   },
   "devDependencies": {

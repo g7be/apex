@@ -251,6 +251,26 @@ Add an entry to `data/regions.json` (origin, bbox, tile zoom), then run
 `node scripts/fetch-osm.mjs <region>` and `npx tsx scripts/build-world.ts <region>`, and start with
 `REGION=<region>`. Tile keys are global, so regions can later be merged into one world.
 
+## Deploying
+
+The game has two parts: a static client (map, city tiles, globe data) and the game server
+(WebSockets + SQLite). Static hosts such as Netlify can only serve the first.
+
+**Everything on one host (simplest).** Any Node host with WebSockets and a persistent disk can run
+`npm ci && npm run build && npm start`; the server also serves the built client. `render.yaml` is a
+ready-made Render blueprint for this (1 GB disk at `/var/data` for the database).
+
+**Client on Netlify, server elsewhere.** `netlify.toml` builds with `npm run build:web`, which builds
+the client and copies `data/world/*` into `client/dist/world`. Deploy the server (e.g. with
+`render.yaml`), then in Netlify set the environment variable `VITE_GAME_SERVER` to the server's URL
+(e.g. `https://apex-game-server.onrender.com`) and redeploy. Without it the map loads but the client
+reports that it can't reach the game server.
+
+The statewide Indiana tiles are not in git, so hosted builds show the downtown detail and the globe
+only. To include them, build them on the host (`npm run data:state`) or commit/upload `data/world/indiana/`;
+they're gzipped `.json.gz` files that must be served with `Content-Encoding: gzip`, which the game
+server does (set `COPY_STATE=1` to copy them into a static build).
+
 ## Known limitations
 
 - The terrain is flat (downtown Indianapolis is nearly flat).

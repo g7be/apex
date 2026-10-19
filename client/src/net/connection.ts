@@ -25,7 +25,19 @@ export const identity = {
   savedName: () => storage(NAME_KEY) ?? '',
 };
 
-type Pending = { resolve: (r: { ok: boolean; error?: string; lease?: Lease }) => void; timer: number };
+/**
+ * WebSocket URL of the game server. Same origin by default (local dev and
+ * `npm start`); when the client is hosted separately (e.g. Netlify), set
+ * VITE_GAME_SERVER at build time to the server's http(s) URL.
+ */
+export function gameServerUrl() {
+  const configured = (import.meta.env.VITE_GAME_SERVER as string | undefined)?.trim();
+  if (configured) return `${configured.replace(/^http/, 'ws').replace(/\/+$/, '')}/ws`;
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  return `${proto}://${location.host}/ws`;
+}
+
+type Pending ={ resolve: (r: { ok: boolean; error?: string; lease?: Lease }) => void; timer: number };
 
 class Connection {
   private ws: WebSocket | null = null;
@@ -49,8 +61,7 @@ class Connection {
 
   private open() {
     game.set({ connection: 'connecting' });
-    const proto = location.protocol === 'https:' ? 'wss' : 'ws';
-    const ws = new WebSocket(`${proto}://${location.host}/ws`);
+    const ws = new WebSocket(gameServerUrl());
     this.ws = ws;
     ws.onopen = () => {
       this.retry = 0;

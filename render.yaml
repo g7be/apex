@@ -1,0 +1,24 @@
+# Render blueprint for the game server (WebSockets + SQLite). It also serves
+# the built client, so this one service can host the whole game by itself.
+# If the client is on Netlify instead, set VITE_GAME_SERVER there to this
+# service's URL (e.g. https://apex-game-server.onrender.com).
+services:
+  - type: web
+    name: apex-game-server
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: GAME_PORT
+        value: "10000"
+      - key: DB_PATH
+        value: /var/data/game.db
+    # Persistent disk so balances and leases survive deploys and restarts.
+    # (Without a disk, Render's filesystem is wiped on every deploy.)
+    disk:
+      name: game-data
+      mountPath: /var/data
+      sizeGB: 1
